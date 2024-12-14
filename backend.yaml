@@ -1,6 +1,9 @@
 - name: configure backend server
   hosts: backend
   become: yes
+  vars:
+    login_host: db.daws78s.online
+    login_password: ExpenseApp@1 
 
   tasks:
   - name: disable default nodejs
